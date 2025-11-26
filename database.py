@@ -1,5 +1,6 @@
 
 # database.py
+
 from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Depends
 from sqlmodel import SQLModel, Field, Session, create_engine, select
 from contextlib import asynccontextmanager
@@ -16,8 +17,9 @@ print("""
 # Database Configuration
 # ============================================================================
 
-DATABASE_URL = "sqlite:///server_sqlmodel/Soldier_db.sqlite"
-engine = create_engine(DATABASE_URL, echo=False)
+sqlite_file_name = "Soldier_db.sqlite"
+sqlite_url = f"sqlite:///{sqlite_file_name}"
+engine = create_engine(sqlite_url, echo=False)
 
 
 # ============================================================================

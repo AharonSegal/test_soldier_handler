@@ -31,7 +31,7 @@ pip install python-dotenv
 # ╚══════════════════════════════════════════════════════╝
 """
 git add .                    
-git commit -m " "      
+git commit -m " db setup"      
 git push                     
 
 
