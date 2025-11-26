@@ -46,7 +46,8 @@ git push -u origin main         # First push
 git pull                        # Fetch + merge
 git fetch                       # Fetch only
 git branch                      # List branches
-git checkout -b "aharon"         # Create + switch
+git checkout "dev"         # Create + switch
+git checkout "main"         # Create + switch
 git switch <branch>             # Switch only
 """
 
